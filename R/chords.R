@@ -1,6 +1,8 @@
 #' Chords from Lahdelma and Eerola 2020 Exp. 1 consonance ratings
-#'
+#' 
 #' A dataset containing ratings of consonance.
+#'
+#' @name chords
 #'
 #' @format A data frame with 25 rows and 7 variables:
 #' \describe{
@@ -14,4 +16,4 @@
 #'   ...
 #' }
 #' @source \url{https://doi.org/10.1038/s41598-020-65615-8}
-"chords"
+NULL

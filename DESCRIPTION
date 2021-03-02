@@ -1,9 +1,9 @@
 Package: MusicScienceData
-Title: Example Data Relevant for Music Science
+Title: Example Data for Music Science tutorials
 Version: 0.1
 Authors@R: 
     person(given = "Tuomas",
-           family = "Eerika",
+           family = "Eerola",
            role = c("aut", "cre"),
            email = "tuomas.eerola@durham.ac.uk",
            comment = c(ORCID = "0000-0002-2896-929X"))
