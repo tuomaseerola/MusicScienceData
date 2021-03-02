@@ -43,7 +43,8 @@ Currently the following datasets are implemented:
 | :--------------- | :----- |:-----------------------|
 | chords           | 25     | Lahdelma & Eerola 2020 |
 | soundtracks      | 110    | Eerola & Vuoskoski 2011|
-| sad_music        | NA     | Eerola & Peltola 2016  |
+| soundtracks_features| 110    | Acoustic features for soundtracks|
+| sadness          | NA     | Eerola & Peltola 2016  |
 
 
 ## References
