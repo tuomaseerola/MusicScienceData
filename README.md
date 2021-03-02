@@ -22,12 +22,12 @@ devtools::install_github("tuomaseerola/MusicScienceData")
 
 ## Example
 
-These are the contents of one dataset:
+These are the first four rows of the `chords` dataset in the library:
 
 ``` r
 library(MusicScienceData)
-data <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
-knitr::kable(data[1:4,])
+d <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
+knitr::kable(d[1:4,])
 ```
 
 | id         |   rating | rating\_sd | rating\_se | pi\_chord | chord\_size | dataset |
@@ -37,18 +37,27 @@ knitr::kable(data[1:4,])
 | DYA\_03\_1 | 3.330645 |   1.107368 |  0.1566055 | 57, 63    |           2 | lah20a  |
 | DYA\_04\_1 | 3.866935 |   1.069657 |  0.1512723 | 56, 64    |           2 | lah20a  |
 
+``` r
+# Are Consonance ratings dependent on Chord Size?
+boxplot(rating ~ chord_size,data = d,col='lightblue')
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="70%" />
+
 ## Datasets
 
-Currently the following datasets are implemented:
+Currently the following datasets are included:
 
-| dataset               | Stimulus N | Study                             |
-|:----------------------|:-----------|:----------------------------------|
-| chords                | 25         | Lahdelma & Eerola 2020            |
-| soundtracks           | 110        | Eerola & Vuoskoski 2011           |
-| soundtracks\_features | 110        | Acoustic features for soundtracks |
-| sadness               | NA         | Eerola & Peltola 2016             |
-| annotations           | 100        | Unpublished data                  |
-| annotations\_features | 100        | Unpublished data                  |
+| dataset               | Stim. N | Concepts                           |
+|:----------------------|:--------|:-----------------------------------|
+| chords                | 25      | Consonance ratings                 |
+| soundtracks           | 110     | Emotion ratings                    |
+| soundtracks\_features | 110     | Acoustic features                  |
+| sadness               | NA      | Attitude ratings towards sad music |
+| annotations           | 100     | Annotations of 8 concepts          |
+| annotations\_features | 100     | Acoustic features                  |
+
+## Another example
 
 Here is an example of the `sadness` dataset.
 

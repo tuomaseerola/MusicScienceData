@@ -30,27 +30,30 @@ devtools::install_github("tuomaseerola/MusicScienceData")
 ```
 ## Example
 
-These are the contents of one dataset:
+These are the first four rows of the `chords` dataset in the library:
 
 ```{r}
 library(MusicScienceData)
-data <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
-knitr::kable(data[1:4,])
+d <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
+knitr::kable(d[1:4,])
+# Are Consonance ratings dependent on Chord Size?
+boxplot(rating ~ chord_size,data = d,col='lightblue')
 ```
 
 ## Datasets
 
-Currently the following datasets are implemented:
+Currently the following datasets are included:
 
-| dataset          | Stimulus N| Study               |
-| :--------------- | :----- |:-----------------------|
-| chords           | 25     | Lahdelma & Eerola 2020 |
-| soundtracks      | 110    | Eerola & Vuoskoski 2011|
-| soundtracks_features| 110 | Acoustic features for soundtracks|
-| sadness          | NA     | Eerola & Peltola 2016  |
-| annotations      | 100    | Unpublished data       |
-| annotations_features| 100 | Unpublished data       |
+| dataset             | Stim. N|Concepts                | Study                  |
+| :------------------ | :----- |:-----------------------|
+| chords              | 25     |Consonance ratings      | Lahdelma & Eerola 2020 |
+| soundtracks         | 110    |Emotion ratings         | Eerola & Vuoskoski 2011|
+| soundtracks_features| 110    |Acoustic features       | Related to soundtracks|
+| sadness             | NA     | Attitude ratings towards sad music| Eerola & Peltola 2016  |
+| annotations         | 100    | Annotations of 8 concepts | Unpublished data       |
+| annotations_features| 100    | Acoustic features      | Unpublished        |
 
+## Another example
 
 Here is an example of the `sadness` dataset.
 ```{r}
