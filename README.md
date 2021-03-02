@@ -48,8 +48,8 @@ Currently the following datasets are implemented:
 
 ## References
 
-Lahdelma, I. & Eerola, T. (2020). Cultural familiarity and musical expertise impact the pleasantness of consonance/dissonance but not its perceived tension. _Scientific Reports(10), 8693_. (https://doi.org/10.1038/s41598-020-65615-8)[https://doi.org/10.1038/s41598-020-65615-8]
+Lahdelma, I. & Eerola, T. (2020). Cultural familiarity and musical expertise impact the pleasantness of consonance/dissonance but not its perceived tension. _Scientific Reports(10), 8693_. [https://doi.org/10.1038/s41598-020-65615-8](https://doi.org/10.1038/s41598-020-65615-8)
 
-Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad Music - Reasons, Reactions and Mechanisms of Three Types of Experiences. _PlosOne, 11(6)_, e0157444. (http://dx.doi.org/10.1371/journal.pone.0157444)[http://dx.doi.org/10.1371/journal.pone.0157444]
+Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad Music - Reasons, Reactions and Mechanisms of Three Types of Experiences. _PlosOne, 11(6)_, e0157444. [http://dx.doi.org/10.1371/journal.pone.0157444](http://dx.doi.org/10.1371/journal.pone.0157444)
 
-Eerola, T. & Vuoskoski, J. K. (2011). A comparison of the discrete and dimensional models of emotion in music. _Psychology of Music, 39(1)_, 18-49. (https://doi.org/10.1177/0305735610362821)[https://doi.org/10.1177/0305735610362821]
+Eerola, T. & Vuoskoski, J. K. (2011). A comparison of the discrete and dimensional models of emotion in music. _Psychology of Music, 39(1)_, 18-49. [https://doi.org/10.1177/0305735610362821](https://doi.org/10.1177/0305735610362821)
