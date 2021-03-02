@@ -22,12 +22,20 @@ devtools::install_github("tuomaseerola/MusicScienceData")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These are the contents of one dataset:
 
 ``` r
 library(MusicScienceData)
 data <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
+knitr::kable(data[1:4,])
 ```
+
+| id         |   rating | rating\_sd | rating\_se | pi\_chord | chord\_size | dataset |
+|:-----------|---------:|-----------:|-----------:|:----------|------------:|:--------|
+| DYA\_01\_1 | 2.036290 |   1.225031 |  0.1732456 | 59, 60    |           2 | lah20a  |
+| DYA\_02\_1 | 3.149193 |   1.122966 |  0.1588113 | 55, 65    |           2 | lah20a  |
+| DYA\_03\_1 | 3.330645 |   1.107368 |  0.1566055 | 57, 63    |           2 | lah20a  |
+| DYA\_04\_1 | 3.866935 |   1.069657 |  0.1512723 | 56, 64    |           2 | lah20a  |
 
 ## Datasets
 
@@ -42,33 +50,37 @@ Currently the following datasets are implemented:
 | annotations           | 100        | Unpublished data                  |
 | annotations\_features | 100        | Unpublished data                  |
 
-Just to give you a glimpse of some of the datasets, here are the
-contents of the `chords` dataset.
+Here is an example of the `sadness` dataset.
 
 ``` r
-knitr::kable(MusicScienceData::chords[1:4,])
+knitr::kable(MusicScienceData::sadness[1:4,1:10])
 ```
 
-| id         |   rating | rating\_sd | rating\_se | pi\_chord | chord\_size | dataset |
-|:-----------|---------:|-----------:|-----------:|:----------|------------:|:--------|
-| DYA\_01\_1 | 2.036290 |   1.225031 |  0.1732456 | 59, 60    |           2 | lah20a  |
-| DYA\_02\_1 | 3.149193 |   1.122966 |  0.1588113 | 55, 65    |           2 | lah20a  |
-| DYA\_03\_1 | 3.330645 |   1.107368 |  0.1566055 | 57, 63    |           2 | lah20a  |
-| DYA\_04\_1 | 3.866935 |   1.069657 |  0.1512723 | 56, 64    |           2 | lah20a  |
+| subj | age      | gender | listen  | expert | listensad | ASM1 | ASM2 | ASM3 | ASM4 |
+|:-----|:---------|:-------|:--------|:-------|:----------|-----:|-----:|-----:|-----:|
+| 1    | 35 to 44 | Female | d       | MusicL | Sometimes |    6 |    2 |    5 |    3 |
+| 2    | 45 to 54 | Female | mult./d | MusicL | Often     |    2 |    6 |    6 |    3 |
+| 3    | 18 to 24 | Female | d       | NM     | Sometimes |    6 |    5 |    5 |    5 |
+| 4    | 25 to 34 | Male   | d       | Amat.  | Sometimes |    5 |    4 |    4 |    6 |
 
-    #> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
-    #> ✓ tibble  3.0.6     ✓ dplyr   1.0.4
-    #> ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-    #> ✓ readr   1.4.0     ✓ forcats 0.5.1
-    #> ✓ purrr   0.3.4
-    #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    #> x dplyr::filter() masks stats::filter()
-    #> x dplyr::lag()    masks stats::lag()
+We can look at the distribution of the ratings to one of the questions:
 
-<img src="man/figures/README-MusicScienceData-1.png" width="100%" />
+``` r
+library(ggplot2)
+library(tidyverse)
+MusicScienceData::sadness %>% 
+  drop_na(ASM10) %>%
+  ggplot(aes(x = ASM10))+
+  geom_histogram(bins=7,fill="grey", colour='black')+
+  scale_x_continuous(breaks = seq(1,7,by=1))+ 
+  ggtitle('Listening to sad music induces unpleasant feelings in me')+
+  ylab('Count')+
+  xlab('1 = Strongly disagree, 7 = Strongly agree')+
+  theme_bw()+
+  theme(plot.title = element_text(size=12))
+```
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+<img src="man/figures/README-MusicScienceData-1.png" width="70%" />
 
 ## Citation
 

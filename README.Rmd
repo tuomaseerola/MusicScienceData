@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "70%"
 )
 ```
 
@@ -30,11 +30,12 @@ devtools::install_github("tuomaseerola/MusicScienceData")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These are the contents of one dataset:
 
 ```{r}
 library(MusicScienceData)
 data <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
+knitr::kable(data[1:4,])
 ```
 
 ## Datasets
@@ -51,15 +52,14 @@ Currently the following datasets are implemented:
 | annotations_features| 100 | Unpublished data       |
 
 
-Just to give you a glimpse of some of the datasets, here are the contents of the `chords` dataset.
+Here is an example of the `sadness` dataset.
 ```{r}
-knitr::kable(MusicScienceData::chords[1:4,])
+knitr::kable(MusicScienceData::sadness[1:4,1:10])
 ```
 
+We can look at the distribution of the ratings to one of the questions:
 
-
-
-```{r MusicScienceData, echo = FALSE,warning=FALSE}
+```{r MusicScienceData, echo = TRUE,warning=FALSE,message=FALSE}
 library(ggplot2)
 library(tidyverse)
 MusicScienceData::sadness %>% 
@@ -73,8 +73,6 @@ MusicScienceData::sadness %>%
   theme_bw()+
   theme(plot.title = element_text(size=12))
 ```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
 
 ## Citation
 Eerola, T. (2021). MusicScienceData. Open datasets for Music and Science Tutorials. https://github.com/tuomaseerola/MusicScienceData
