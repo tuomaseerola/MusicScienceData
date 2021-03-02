@@ -1,0 +1,18 @@
+Package: MusicScienceData
+Title: Example Data Relevant for Music Science
+Version: 0.1
+Authors@R: 
+    person(given = "Tuomas",
+           family = "Eerika",
+           role = c("aut", "cre"),
+           email = "tuomas.eerola@durham.ac.uk",
+           comment = c(ORCID = "0000-0002-2896-929X"))
+Description: This package holds some example datasets,
+    that can be useful for teaching music and science. 
+    The datasets have been derived from open accessible sources
+    such as those from Harvard Dataverse or OSF.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
