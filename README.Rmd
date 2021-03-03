@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-`MusicScienceData` is an R package that offers example datasets suitable for exploration of basic analyses (correlation, comparison of means, etc.) in music and science studies. There is behavioural data consisting of ratings of emotional expression in soundtracks, consonance in chords, and musical annotations of soundtracks as well as some acoustic features extracted via `librosa python` script from the same files. 
+`MusicScienceData` is an R package that offers example datasets suitable for exploration of basic analyses (correlation, comparison of means, etc.) in music and science studies. There is behavioural data consisting of ratings of emotional expression in soundtracks, consonance in chords, and musical annotations of soundtracks as well as some acoustic features extracted via `librosa python` script from the same files.
 
 ## Installation
 
