@@ -6,9 +6,12 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-`MusicScienceData` is an R package that offers example datasets for
-suitable for exploration of basic analyses (correlation, comparison of
-means, etc.).
+`MusicScienceData` is an R package that offers example datasets suitable
+for exploration of basic analyses (correlation, comparison of means,
+etc.) in music and science studies. There is behavioural data consisting
+of ratings of emotional expression in soundtracks, consonance in chords,
+and musical annotations of soundtracks as well as some acoustic features
+extracted via `librosa python` script from the same files.
 
 ## Installation
 
@@ -59,7 +62,8 @@ Currently the following datasets are included:
 
 ## Another example
 
-Here is an example of the `sadness` dataset.
+Here is an example of the `sadness` dataset that contains ratings of
+attitudes towards sad music from a sample of participants.
 
 ``` r
 knitr::kable(MusicScienceData::sadness[1:4,1:10])
