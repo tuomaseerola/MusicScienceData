@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "70%"
+  out.width = "75%"
 )
 ```
 
@@ -53,14 +53,14 @@ Currently the following datasets are included:
 | annotations         | 100    | Annotations of 8 concepts | Unpublished data       |
 | annotations_features| 100    | Acoustic features      | Unpublished        |
 
-## Another example
+## Another example: Attitude ratings
 
 Here is an example of the `sadness` dataset that contains ratings of attitudes towards sad music from a sample of participants.
 ```{r}
 knitr::kable(MusicScienceData::sadness[1:4,1:10])
 ```
 
-We can look at the distribution of the ratings to one of the questions:
+We can look at the distribution of the ratings to one of the questions (ASM10 is the item 10):
 
 ```{r MusicScienceData, echo = TRUE,warning=FALSE,message=FALSE}
 library(ggplot2)
@@ -68,13 +68,13 @@ library(tidyverse)
 MusicScienceData::sadness %>% 
   drop_na(ASM10) %>%
   ggplot(aes(x = ASM10))+
-  geom_histogram(bins=7,fill="grey", colour='black')+
+  geom_histogram(bins=7,fill="darkseagreen1", colour='black')+
   scale_x_continuous(breaks = seq(1,7,by=1))+ 
   ggtitle('Listening to sad music induces unpleasant feelings in me')+
   ylab('Count')+
   xlab('1 = Strongly disagree, 7 = Strongly agree')+
   theme_bw()+
-  theme(plot.title = element_text(size=12))
+  theme(plot.title = element_text(size=13))
 ```
 
 ## Citation
@@ -85,6 +85,6 @@ Eerola, T. (2021). MusicScienceData. Open datasets for Music and Science Tutoria
 
 Lahdelma, I. & Eerola, T. (2020). Cultural familiarity and musical expertise impact the pleasantness of consonance/dissonance but not its perceived tension. _Scientific Reports(10), 8693_. [https://doi.org/10.1038/s41598-020-65615-8](https://doi.org/10.1038/s41598-020-65615-8)
 
-Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad Music - Reasons, Reactions and Mechanisms of Three Types of Experiences. _PlosOne, 11(6)_, e0157444. [http://dx.doi.org/10.1371/journal.pone.0157444](http://dx.doi.org/10.1371/journal.pone.0157444)
+Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad Music: Reasons, Reactions and Mechanisms of Three Types of Experiences. _PlosOne, 11(6)_, e0157444. [http://dx.doi.org/10.1371/journal.pone.0157444](http://dx.doi.org/10.1371/journal.pone.0157444)
 
 Eerola, T. & Vuoskoski, J. K. (2011). A comparison of the discrete and dimensional models of emotion in music. _Psychology of Music, 39(1)_, 18-49. [https://doi.org/10.1177/0305735610362821](https://doi.org/10.1177/0305735610362821)

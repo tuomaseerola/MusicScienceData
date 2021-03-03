@@ -45,7 +45,7 @@ knitr::kable(d[1:4,])
 boxplot(rating ~ chord_size,data = d,col='lightblue')
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="70%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="75%" />
 
 ## Datasets
 
@@ -60,7 +60,7 @@ Currently the following datasets are included:
 | annotations           | 100     | Annotations of 8 concepts          |
 | annotations\_features | 100     | Acoustic features                  |
 
-## Another example
+## Another example: Attitude ratings
 
 Here is an example of the `sadness` dataset that contains ratings of
 attitudes towards sad music from a sample of participants.
@@ -76,7 +76,8 @@ knitr::kable(MusicScienceData::sadness[1:4,1:10])
 | 3    | 18 to 24 | Female | d       | NM     | Sometimes |    6 |    5 |    5 |    5 |
 | 4    | 25 to 34 | Male   | d       | Amat.  | Sometimes |    5 |    4 |    4 |    6 |
 
-We can look at the distribution of the ratings to one of the questions:
+We can look at the distribution of the ratings to one of the questions
+(ASM10 is the item 10):
 
 ``` r
 library(ggplot2)
@@ -84,16 +85,16 @@ library(tidyverse)
 MusicScienceData::sadness %>% 
   drop_na(ASM10) %>%
   ggplot(aes(x = ASM10))+
-  geom_histogram(bins=7,fill="grey", colour='black')+
+  geom_histogram(bins=7,fill="darkseagreen1", colour='black')+
   scale_x_continuous(breaks = seq(1,7,by=1))+ 
   ggtitle('Listening to sad music induces unpleasant feelings in me')+
   ylab('Count')+
   xlab('1 = Strongly disagree, 7 = Strongly agree')+
   theme_bw()+
-  theme(plot.title = element_text(size=12))
+  theme(plot.title = element_text(size=13))
 ```
 
-<img src="man/figures/README-MusicScienceData-1.png" width="70%" />
+<img src="man/figures/README-MusicScienceData-1.png" width="75%" />
 
 ## Citation
 
@@ -107,8 +108,8 @@ expertise impact the pleasantness of consonance/dissonance but not its
 perceived tension. *Scientific Reports(10), 8693*.
 <https://doi.org/10.1038/s41598-020-65615-8>
 
-Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad Music
-- Reasons, Reactions and Mechanisms of Three Types of Experiences.
+Eerola, T. & Peltola, H.-R. (2016). Memorable Experiences with Sad
+Music: Reasons, Reactions and Mechanisms of Three Types of Experiences.
 *PlosOne, 11(6)*, e0157444.
 <http://dx.doi.org/10.1371/journal.pone.0157444>
 
