@@ -2,7 +2,7 @@
 % Please edit documentation in R/soundtracks.R
 \name{soundtracks}
 \alias{soundtracks}
-\title{Soundtracks: Eerola and Vuoskoski 2011 ratings}
+\title{soundtracks: Eerola and Vuoskoski 2011 ratings}
 \format{
 A data frame with 110 rows and 16 variables:
 \describe{

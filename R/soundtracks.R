@@ -1,4 +1,4 @@
-#' Soundtracks: Eerola and Vuoskoski 2011 ratings
+#' soundtracks: Eerola and Vuoskoski 2011 ratings
 #'
 #' A dataset containing ratings of emotions for 110 film soundtrack excerpts.
 #'
