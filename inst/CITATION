@@ -1,11 +1,11 @@
 citHeader("To cite MusicScienceData in publications use:")
 
 citEntry(
-  entry    = "Article",
-  title    = Music and Science Dataset for Tutorials,
-  author   = Tuomas Eerola,
-  year     = 2021,
-  url      = http://github.com/tuomaseerola/MusicScienceData/,
+  entry    = "misc",
+  title    = "Music and Science Dataset for Tutorials",
+  author   = "Tuomas Eerola",
+  year     = "2021",
+  url      = "https://github.com/tuomaseerola/MusicScienceData",
   textVersion = paste(
 
   )
