@@ -1,8 +1,8 @@
-#' Soundtracks features: Acoustic features of 110 soundtracks
+#' Soundtrack features: Acoustic features of 110 soundtracks
 #'
 #' A dataset containing acoustic features for 110 film soundtrack excerpts.
 #'
-#' @name soundtracks_features
+#' @name soundtrack_features
 #'
 #' @format A data frame with 110 rows and 26 variables:
 #' \describe{

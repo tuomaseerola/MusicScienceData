@@ -47,8 +47,8 @@ Currently the following datasets are included:
 | dataset             | Stim. N|Concepts                | Study                  |
 | :------------------ | :----- |:-----------------------|
 | chords              | 25     |Consonance ratings      | Lahdelma & Eerola 2020 |
-| soundtracks         | 110    |Emotion ratings         | Eerola & Vuoskoski 2011|
-| soundtracks_features| 110    |Acoustic features       | Related to soundtracks|
+| soundtrack         | 110    |Emotion ratings         | Eerola & Vuoskoski 2011|
+| soundtrack_features| 110    |Acoustic features       | Related to soundtracks|
 | sadness             | NA     | Attitude ratings towards sad music| Eerola & Peltola 2016  |
 | annotations         | 100    | Annotations of 8 concepts | Unpublished data       |
 | annotations_features| 100    | Acoustic features      | Unpublished        |

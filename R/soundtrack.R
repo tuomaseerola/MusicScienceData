@@ -1,8 +1,8 @@
-#' soundtracks: Eerola and Vuoskoski 2011 ratings
+#' soundtrack: Eerola and Vuoskoski 2011 ratings
 #'
 #' A dataset containing ratings of emotions for 110 film soundtrack excerpts.
 #'
-#' @name soundtracks
+#' @name soundtrack
 #'
 #' @format A data frame with 110 rows and 16 variables:
 #' \describe{
