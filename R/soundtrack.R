@@ -1,8 +1,6 @@
-#' soundtrack: Eerola and Vuoskoski 2011 ratings
+#' soundtrack ratings
 #'
-#' A dataset containing ratings of emotions for 110 film soundtrack excerpts.
-#'
-#' @name soundtrack
+#' Ratings of emotions for 110 film soundtrack excerpts.
 #'
 #' @format A data frame with 110 rows and 16 variables:
 #' \describe{
@@ -22,6 +20,5 @@
 #'   \item{TARGET_POLARITY}{Definition of TARGET_POLARITY (Neg. or Pos.)}
 #'   \item{TARGET_FRAMEWORK}{Definition of TARGET_FRAMEWORK (Discrete or Dimensional)}
 #'   \item{soundtrack}{Name of the soundtrack}
-#'   ...
 #' }
-NULL
+"soundtrack"
