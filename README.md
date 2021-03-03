@@ -54,8 +54,8 @@ Currently the following datasets are included:
 | dataset               | Stim. N | Concepts                           |
 |:----------------------|:--------|:-----------------------------------|
 | chords                | 25      | Consonance ratings                 |
-| soundtracks           | 110     | Emotion ratings                    |
-| soundtracks\_features | 110     | Acoustic features                  |
+| soundtrack            | 110     | Emotion ratings                    |
+| soundtrack\_features  | 110     | Acoustic features                  |
 | sadness               | NA      | Attitude ratings towards sad music |
 | annotations           | 100     | Annotations of 8 concepts          |
 | annotations\_features | 100     | Acoustic features                  |
