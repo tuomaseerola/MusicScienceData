@@ -3,7 +3,7 @@
 \docType{data}
 \name{soundtrack}
 \alias{soundtrack}
-\title{soundtrack ratings}
+\title{soundtrack}
 \format{
 A data frame with 110 rows and 16 variables:
 \describe{
@@ -29,6 +29,6 @@ A data frame with 110 rows and 16 variables:
 soundtrack
 }
 \description{
-Ratings of emotions for 110 film soundtrack excerpts.
+Ratings of emotions for 110 film soundtrack excerpts
 }
 \keyword{datasets}

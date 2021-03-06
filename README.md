@@ -51,14 +51,15 @@ boxplot(rating ~ chord_size,data = d,col='lightblue')
 
 Currently the following datasets are included:
 
-| dataset               | Stim. N | Concepts                           |
-|:----------------------|:--------|:-----------------------------------|
-| chords                | 25      | Consonance ratings                 |
-| soundtrack            | 110     | Emotion ratings                    |
-| soundtrack\_features  | 110     | Acoustic features                  |
-| sadness               | NA      | Attitude ratings towards sad music |
-| annotations           | 100     | Annotations of 8 concepts          |
-| annotations\_features | 100     | Acoustic features                  |
+| dataset               | Stim. N | Concepts                    | Study                   |
+|:----------------------|:--------|:----------------------------|-------------------------|
+| chords                | 25      | Consonance ratings          | Lahdelma & Eerola 2020  |
+| soundtrack            | 110     | Emotion ratings             | Eerola & Vuoskoski 2011 |
+| soundtrack\_features  | 110     | Acoustic features           | Related to soundtracks  |
+| sadness               | NA      | Attitudes towards sad music | Eerola & Peltola 2016   |
+| annotations           | 100     | Annotations of 8 concepts   | Unpublished data        |
+| annotations\_features | 100     | Acoustic features           | Unpublished             |
+| priming               | 64      | Reaction time responses     | Armitage & Eerola, 2020 |
 
 ## Another example: Attitude ratings
 
@@ -102,6 +103,11 @@ Eerola, T. (2021). MusicScienceData. Open datasets for Music and Science
 Tutorials. <https://github.com/tuomaseerola/MusicScienceData>
 
 ## References
+
+Armitage, J. & Eerola, T. (2020). Reaction Time Data in Music Cognition:
+A Comparison of Pilot Data Sets from Lab, Crowdsourced and Convenience
+Web Samples. *Frontiers in Psychology*.
+<https://doi.org/10.3389/fpsyg.2019.02883>
 
 Lahdelma, I. & Eerola, T. (2020). Cultural familiarity and musical
 expertise impact the pleasantness of consonance/dissonance but not its
