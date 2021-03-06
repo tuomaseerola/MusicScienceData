@@ -30,18 +30,18 @@ These are the first four rows of the `chords` dataset in the library:
 ``` r
 library(MusicScienceData)
 d <- MusicScienceData::chords # Consonance ratings for 25 chords from Lahdelma & Eerola 2020
-knitr::kable(d[1:4,])
+knitr::kable(d[1:4,],digits = 2)
 ```
 
-| id         |   rating | rating\_sd | rating\_se | pi\_chord | chord\_size | dataset |
-|:-----------|---------:|-----------:|-----------:|:----------|------------:|:--------|
-| DYA\_01\_1 | 2.036290 |   1.225031 |  0.1732456 | 59, 60    |           2 | lah20a  |
-| DYA\_02\_1 | 3.149193 |   1.122966 |  0.1588113 | 55, 65    |           2 | lah20a  |
-| DYA\_03\_1 | 3.330645 |   1.107368 |  0.1566055 | 57, 63    |           2 | lah20a  |
-| DYA\_04\_1 | 3.866935 |   1.069657 |  0.1512723 | 56, 64    |           2 | lah20a  |
+| id         | rating | rating\_sd | rating\_se | pi\_chord | chord\_size | dataset |
+|:-----------|-------:|-----------:|-----------:|:----------|------------:|:--------|
+| DYA\_01\_1 |   2.04 |       1.23 |       0.17 | 59, 60    |           2 | lah20a  |
+| DYA\_02\_1 |   3.15 |       1.12 |       0.16 | 55, 65    |           2 | lah20a  |
+| DYA\_03\_1 |   3.33 |       1.11 |       0.16 | 57, 63    |           2 | lah20a  |
+| DYA\_04\_1 |   3.87 |       1.07 |       0.15 | 56, 64    |           2 | lah20a  |
 
 ``` r
-# Are Consonance ratings dependent on Chord Size?
+# Are Consonance ratings dependent on the chord size?
 boxplot(rating ~ chord_size,data = d,col='lightblue')
 ```
 
@@ -51,15 +51,16 @@ boxplot(rating ~ chord_size,data = d,col='lightblue')
 
 Currently the following datasets are included:
 
-| dataset               | Stim. N | Concepts                    | Study                   |
-|:----------------------|:--------|:----------------------------|-------------------------|
-| chords                | 25      | Consonance ratings          | Lahdelma & Eerola 2020  |
-| soundtrack            | 110     | Emotion ratings             | Eerola & Vuoskoski 2011 |
-| soundtrack\_features  | 110     | Acoustic features           | Related to soundtracks  |
-| sadness               | NA      | Attitudes towards sad music | Eerola & Peltola 2016   |
-| annotations           | 100     | Annotations of 8 concepts   | Unpublished data        |
-| annotations\_features | 100     | Acoustic features           | Unpublished             |
-| priming               | 64      | Reaction time responses     | Armitage & Eerola, 2020 |
+| dataset               | Stim. N | Concepts                     | Study                   |
+|:----------------------|:--------|:-----------------------------|-------------------------|
+| chords                | 25      | Consonance ratings           | Lahdelma & Eerola 2020  |
+| soundtrack            | 110     | Emotion ratings              | Eerola & Vuoskoski 2011 |
+| soundtrack\_features  | 110     | Acoustic features            | Related to soundtracks  |
+| sadness               | NA      | Attitudes towards sad music  | Eerola & Peltola 2016   |
+| sadness\_AMS\_labels  | NA      | 25 questions included in ASM | Eerola & Peltola 2016   |
+| annotations           | 100     | Annotations of 8 concepts    | Unpublished data        |
+| annotations\_features | 100     | Acoustic features            | Unpublished data        |
+| priming               | 64      | Reaction time responses      | Armitage & Eerola, 2020 |
 
 ## Another example: Attitude ratings
 
