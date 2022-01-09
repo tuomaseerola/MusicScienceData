@@ -1,4 +1,4 @@
-"Participant", "Age", "VerbalMemoryScore", "Group"
+"ID", "Age", "VerbalMemoryScore","Group"
 "1", 21, 100, Prof. musician
 "2", 19, 95, Prof. musician
 "3", 22, 80, Prof. musician
