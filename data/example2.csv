@@ -1,4 +1,4 @@
-"Participant","Age","Preferred","Genre","Group"
+"Participant","Age","PreferredGenre","Group"
 "1",21,pop,1
 "2",19,pop,1
 "3",18,classical,1
