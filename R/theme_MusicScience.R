@@ -15,14 +15,14 @@
 #' qplot(hp, mpg, data=mtcars, color=am, facets=gear~cyl) + theme_MusicScience()
 #'
 #' @export
-theme_MusicScience <- function(base_size = 12,base_family="Helvetica"){ # specific font removed
+theme_MusicScience <- function(base_size = 12, base_family = "sans"){ # specific font removed
   
   requireNamespace("ggplot2")
   if(! "package:ggplot2" %in% search() ) stop("ggplot2 must be loaded.\nLoad with library(ggplot2) or library(tidyverse).")
   
   if(is.null(args)) args <- list(base_size=base_size)
   
-  theme_grey(base_size = base_size, base_family = base_family) %+replace% 
+  theme_grey(base_size = base_size, base_family = "sans") %+replace% 
     theme(axis.text = element_text(size = rel(0.8)), 
     axis.ticks = element_line(colour = "black"), 
     legend.key = element_rect(colour = "grey80"), 
