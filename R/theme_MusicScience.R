@@ -15,7 +15,7 @@
 #' qplot(hp, mpg, data=mtcars, color=am, facets=gear~cyl) + theme_MusicScience()
 #'
 #' @export
-theme_MusicScience <- function(base_size = 12){ # specific fonts removed: 
+theme_MusicScience <- function(base_size = 12){ # specific font removed
   
   requireNamespace("ggplot2")
   if(! "package:ggplot2" %in% search() ) stop("ggplot2 must be loaded.\nLoad with library(ggplot2) or library(tidyverse).")
