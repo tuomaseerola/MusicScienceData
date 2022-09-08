@@ -1,6 +1,6 @@
 Package: MusicScienceData
 Title: Example Data for Music Science tutorials
-Version: 0.12
+Version: 0.13
 Authors@R: 
     person(given = "Tuomas",
            family = "Eerola",
